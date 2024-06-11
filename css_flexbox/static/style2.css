@@ -1,0 +1,71 @@
+body {
+    min-height: 100vh;
+    background-image: url(./images/IMG_2991.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    min-height: 300vh;
+}
+
+header, footer{
+    background-color:blue;
+    border-style: ridge;
+    border-color: darkturquoise;
+    border-width: 3px;
+    background-color: purple;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    gap: 20%;
+    padding: 20%;
+}
+
+h1 {
+    text-align: center;
+    color:black;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.main_content {
+    border-style: ridge;
+    border-color:blueviolet;
+    border-width: 3px;
+    background-color: aqua;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.sidebar {
+    border-style: ridge;
+    border-color: blue;
+    border-width: 3px;
+    background-color: blueviolet;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
